@@ -1,0 +1,37 @@
+    auto valid = [&](vector<vector<ll>>& g){
+        vector<ll>vis(n+1);
+        ll v = 0;
+        bool cyc = false;
+        function<void(ll,ll)>dfs =[&](ll u,ll p){
+            if(!vis[u])v++;
+            else{
+                cyc=true;
+                return;
+            }
+            vis[u]++;
+            for (auto& v : g[u]){
+                if(v==p)continue;
+                dfs(v,u);
+            }
+        };
+        dfs(1,0);
+        if (cyc)return false;
+        if (v!=n) return false;
+        return true;
+    };
+    vector<vector<ll>> g(n+1);
+    vector<array<ll,2>> edges;
+    while (1){
+        g = vector<vector<ll>>(n+1);
+        edges.clear();
+        for (ll i =0; i +1<n;i++){
+            ll u = rnd(1,n);
+            ll v = rnd(1,n);
+            while(u==v)v=rnd(1,n);
+            g[u].emplace_back(v);
+            g[v].emplace_back(u);
+            edges.push_back({u,v});
+        }
+        if (valid(g))break;
+    }
+    for (auto& [u,v]:edges) cout << u << " "<<v << "\n";
