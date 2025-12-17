@@ -13,13 +13,14 @@ cd d:\colledge\cp_new_page
 git push -u origin main
 ```
 
-When prompted for password, use your Personal Access Token: `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`
+When prompted for password, use your GitHub Personal Access Token (keep it secret!)
 
 ---
 
 ## Step 2: PythonAnywhere Setup (EASY!)
 
 ### 2.1 Sign up for PythonAnywhere
+
 1. Go to https://www.pythonanywhere.com
 2. Click "Sign up"
 3. Choose a free account
@@ -123,25 +124,30 @@ Your app should now be live at: `https://youruser.pythonanywhere.com`
 ## Troubleshooting
 
 ### Error: "Module not found"
+
 - Check virtual environment is activated
 - Run: `pip install -r requirements.txt` in Bash console
 - Reload web app
 
 ### Error: "No module named 'flask'"
+
 - Activate virtualenv: `source ~/.virtualenvs/codeforces/bin/activate`
 - Install: `pip install flask`
 - Reload web app
 
 ### Error: "Connection refused"
+
 - Check Codeforces API is accessible from PythonAnywhere
 - Try accessing https://codeforces.com/api/problemset.problems in browser
 
 ### White screen / 500 error
+
 - Check error log: "Web" tab → "Error log"
 - Look for clues in log file
 - Reload web app
 
 ### Slow first search
+
 - Click "Pre-load Cache" button to cache all problems
 - Subsequent searches will be instant
 
@@ -153,6 +159,7 @@ To push updates to your live site:
 
 1. Make changes locally
 2. Commit and push to GitHub:
+
 ```bash
 git add .
 git commit -m "Your changes"
@@ -160,6 +167,7 @@ git push origin main
 ```
 
 3. In PythonAnywhere Bash console:
+
 ```bash
 cd ~/codeforces-problem-search
 git pull origin main
@@ -172,6 +180,7 @@ git pull origin main
 ## Custom Domain (Optional)
 
 To use a custom domain:
+
 1. Go to "Web" tab
 2. Scroll to "Domains"
 3. Click "Add a new domain"

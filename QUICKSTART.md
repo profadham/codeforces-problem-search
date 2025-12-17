@@ -1,6 +1,7 @@
 # 🚀 DEPLOYMENT INSTRUCTIONS
 
 ## Your GitHub Details
+
 - **Username**: profadham
 - **Repository**: codeforces-problem-search
 - **GitHub URL**: https://github.com/profadham/codeforces-problem-search
@@ -10,6 +11,7 @@
 ## STEP 1: Create GitHub Repository (5 minutes)
 
 ### 1.1 Create Repo on GitHub
+
 1. Go to: https://github.com/new
 2. Fill in:
    - **Repository name**: `codeforces-problem-search`
@@ -22,6 +24,7 @@
 4. Click **"Create repository"**
 
 ### 1.2 Push Your Code
+
 Once repository is created, run these commands in PowerShell:
 
 ```powershell
@@ -30,8 +33,9 @@ git push -u origin main
 ```
 
 When prompted:
+
 - **Username**: profadham
-- **Password**: Use this token: `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`
+- **Password**: Use your GitHub Personal Access Token (keep it secret!)
 
 After push succeeds, verify at: https://github.com/profadham/codeforces-problem-search
 
@@ -40,9 +44,11 @@ After push succeeds, verify at: https://github.com/profadham/codeforces-problem-
 ## STEP 2: Deploy to PythonAnywhere (10-15 minutes)
 
 ### 2.1 Sign Up
+
 Go to: https://www.pythonanywhere.com → Sign up (free account)
 
 ### 2.2 Create Web App
+
 1. Log in
 2. Click **"Web"** tab (top menu)
 3. Click **"+ Add a new web app"**
@@ -52,9 +58,11 @@ Go to: https://www.pythonanywhere.com → Sign up (free account)
 5. Complete the setup
 
 ### 2.3 Clone Repository (in PythonAnywhere)
+
 1. Click **"Consoles"** tab
 2. Click **"Bash"** button
 3. Run:
+
 ```bash
 cd ~
 git clone https://github.com/profadham/codeforces-problem-search.git
@@ -62,7 +70,9 @@ cd codeforces-problem-search
 ```
 
 ### 2.4 Install Dependencies
+
 In Bash console, run:
+
 ```bash
 mkvirtualenv --python=/usr/bin/python3.10 codeforces
 pip install -r requirements.txt
@@ -71,15 +81,18 @@ pip install -r requirements.txt
 (Note: mkvirtualenv activates the virtualenv automatically)
 
 ### 2.5 Configure Web App
+
 1. Go back to **"Web"** tab
 2. Scroll down to **"Source code"** section
 3. Set:
+
    - **Source code**: `/home/YOUR_USERNAME/codeforces-problem-search`
    - **Working directory**: `/home/YOUR_USERNAME/codeforces-problem-search`
-   
+
    (Find YOUR_USERNAME in top-right corner of PythonAnywhere)
 
 ### 2.6 Configure WSGI File
+
 1. In **"Web"** tab, find **"WSGI configuration file"**
 2. Click the file path link (looks like `/var/www/something_wsgi.py`)
 3. Delete all content and paste this:
@@ -101,6 +114,7 @@ from app import app as application
 4. Click **"Save"**
 
 ### 2.7 Reload & Launch!
+
 1. Go to **"Web"** tab
 2. Click the green **"Reload"** button at top
 3. Wait 5-10 seconds
@@ -116,6 +130,7 @@ from app import app as application
 Your Codeforces Problem Search is now deployed and accessible online!
 
 ### What to do next:
+
 1. **Test it**: Visit your PythonAnywhere URL
 2. **Try a search**: Search for "construct"
 3. **Pre-load cache**: Click "Pre-load Cache" for instant future searches
@@ -146,13 +161,13 @@ Want to make changes and update the live version?
 
 ## 🐛 Troubleshooting
 
-| Problem | Solution |
-|---------|----------|
-| "Module not found" | Click **"Consoles"** → **"Bash"**, run `pip install -r requirements.txt` |
-| White screen / 500 error | Check error log in **"Web"** tab → **"Error log"** |
-| Slow first search | Click "Pre-load Cache" button in the app |
-| Can't clone repo | Make sure token has correct permissions |
-| WSGI file not working | Edit it again, clear spaces, copy-paste code exactly |
+| Problem                  | Solution                                                                 |
+| ------------------------ | ------------------------------------------------------------------------ |
+| "Module not found"       | Click **"Consoles"** → **"Bash"**, run `pip install -r requirements.txt` |
+| White screen / 500 error | Check error log in **"Web"** tab → **"Error log"**                       |
+| Slow first search        | Click "Pre-load Cache" button in the app                                 |
+| Can't clone repo         | Make sure token has correct permissions                                  |
+| WSGI file not working    | Edit it again, clear spaces, copy-paste code exactly                     |
 
 ---
 

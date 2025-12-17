@@ -3,6 +3,7 @@
 ## ✅ Your Project is Ready to Deploy!
 
 ### Project Information
+
 - **GitHub Username**: profadham
 - **Repository Name**: codeforces-problem-search
 - **Deployment Platform**: PythonAnywhere (Free tier)
@@ -39,6 +40,7 @@ codeforces-problem-search/
 ## 🚀 QUICK DEPLOYMENT (3 Steps)
 
 ### Step 1: Create GitHub Repo (5 min)
+
 1. Go to https://github.com/new
 2. Name: `codeforces-problem-search`
 3. **Do NOT** initialize with README/gitignore
@@ -49,9 +51,10 @@ codeforces-problem-search/
    git push -u origin main
    ```
    - Username: `profadham`
-   - Password: `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`
+   - Password: Use your GitHub Personal Access Token (keep it secret!)
 
 ### Step 2: Setup PythonAnywhere (10 min)
+
 1. Sign up at https://www.pythonanywhere.com (free)
 2. Web tab → Add new web app → Flask → Python 3.10
 3. Bash console:
@@ -64,6 +67,7 @@ codeforces-problem-search/
    ```
 
 ### Step 3: Configure & Deploy (5 min)
+
 1. Web tab → Set source code directory
 2. Edit WSGI file (use code from QUICKSTART.md)
 3. Click "Reload"
@@ -86,20 +90,21 @@ codeforces-problem-search/
 
 ## 📚 Documentation Files
 
-| File | Purpose |
-|------|---------|
-| **QUICKSTART.md** | ⭐ START HERE - Step by step deployment |
-| **PYTHONANYWHERE_SETUP.md** | Detailed PythonAnywhere guide |
-| **DEPLOYMENT.md** | Alternative deployment options |
-| **README.md** | Project overview & usage |
+| File                        | Purpose                                 |
+| --------------------------- | --------------------------------------- |
+| **QUICKSTART.md**           | ⭐ START HERE - Step by step deployment |
+| **PYTHONANYWHERE_SETUP.md** | Detailed PythonAnywhere guide           |
+| **DEPLOYMENT.md**           | Alternative deployment options          |
+| **README.md**               | Project overview & usage                |
 
 ---
 
 ## 🔑 Your Credentials
 
 Keep these safe! (Already configured in git)
+
 - **GitHub Username**: profadham
-- **GitHub Token**: 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
+- **GitHub Token**: Use your Personal Access Token (keep it secret!)
 - **GitHub Email**: jalaaladham@example.com
 
 ---

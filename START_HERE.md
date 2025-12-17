@@ -14,19 +14,25 @@
 ## 🎯 WHAT TO DO NOW (Pick One!)
 
 ### Option A: QUICKEST START (Recommended)
+
 Follow this file in order: **`DO_THIS_NOW.md`**
+
 - ✅ Most detailed step-by-step
 - ✅ Takes 20 minutes total
 - ✅ Easiest to follow
 
 ### Option B: If You Get Stuck
+
 Check: **`QUICKSTART.md`**
+
 - Has all the same info
 - Organized differently
 - Good backup reference
 
 ### Option C: Deep Dive (Optional)
+
 Read: **`PYTHONANYWHERE_SETUP.md`**
+
 - Even more detailed
 - Explains every option
 - Great for learning
@@ -38,10 +44,10 @@ Read: **`PYTHONANYWHERE_SETUP.md`**
 ```
 STEP 1: Create GitHub Repo (2 min)
         → https://github.com/new
-        
+
 STEP 2: Push Your Code (1 min)
         → git push -u origin main
-        
+
 STEP 3: Deploy to PythonAnywhere (15 min)
         → Sign up, clone, configure, reload
 ```
@@ -72,11 +78,13 @@ STEP 3: Deploy to PythonAnywhere (15 min)
 ## 🔑 IMPORTANT: Your Credentials
 
 **GitHub:**
+
 - Username: `profadham`
 - Email: `jalaaladham@example.com`
-- Token: `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`
+- Token: Use your Personal Access Token (keep it secret!)
 
 **PythonAnywhere:**
+
 - Create new free account
 - Use same email if you want
 - Virtual env name: `codeforces`
@@ -85,14 +93,14 @@ STEP 3: Deploy to PythonAnywhere (15 min)
 
 ## 📁 ALL DOCUMENTATION
 
-| File | Purpose | Read When |
-|------|---------|-----------|
-| **DO_THIS_NOW.md** | Step-by-step deployment | ⭐ START HERE |
-| **QUICKSTART.md** | Alternative guide | If stuck on steps |
-| **PYTHONANYWHERE_SETUP.md** | Extra detailed | Want to understand more |
-| **SETUP_SUMMARY.md** | Overview & checklist | Quick reference |
-| **README.md** | App documentation | After deployed |
-| **DEPLOYMENT.md** | Other platforms | If changing platforms |
+| File                        | Purpose                 | Read When               |
+| --------------------------- | ----------------------- | ----------------------- |
+| **DO_THIS_NOW.md**          | Step-by-step deployment | ⭐ START HERE           |
+| **QUICKSTART.md**           | Alternative guide       | If stuck on steps       |
+| **PYTHONANYWHERE_SETUP.md** | Extra detailed          | Want to understand more |
+| **SETUP_SUMMARY.md**        | Overview & checklist    | Quick reference         |
+| **README.md**               | App documentation       | After deployed          |
+| **DEPLOYMENT.md**           | Other platforms         | If changing platforms   |
 
 ---
 
