@@ -11,6 +11,10 @@ A beautiful web application to search for **Codeforces problems** by keywords in
 - ⚡ **Fast API** - Direct Codeforces API integration
 - 📱 **Mobile-Friendly** - Works great on all devices
 
+## Screenshots
+
+![the screen](screen.png)
+
 ## Quick Start 🚀
 
 ### Prerequisites
@@ -269,3 +273,4 @@ Check the documentation files:
 **Happy problem hunting! 🚀**
 
 If this project helped you find problems to practice, please star it on GitHub! ⭐
+
