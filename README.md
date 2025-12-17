@@ -13,23 +13,27 @@ A web application to search for Codeforces problems by keywords in problem names
 ## Setup
 
 ### Prerequisites
+
 - Python 3.8+
 - pip
 
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/YOUR_USERNAME/codeforces-problem-search.git
 cd codeforces-problem-search
 ```
 
 2. Install dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
 
 3. Run the application:
+
 ```bash
 python app.py
 ```
@@ -46,9 +50,11 @@ python app.py
 ## API Reference
 
 ### POST /api/search
+
 Search for problems by keywords
 
 **Request:**
+
 ```json
 {
   "keywords": "construct permutation",
@@ -57,6 +63,7 @@ Search for problems by keywords
 ```
 
 **Response:**
+
 ```json
 {
   "status": "success",
@@ -74,14 +81,17 @@ Search for problems by keywords
 ```
 
 ### POST /api/load-cache
+
 Pre-load all Codeforces problems into memory
 
 ### GET /api/cache-status
+
 Check if problems are cached and get total count
 
 ## Deployment
 
 See [DEPLOYMENT.md](DEPLOYMENT.md) for instructions on deploying to:
+
 - Heroku
 - PythonAnywhere
 - Render
